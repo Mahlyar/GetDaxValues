@@ -43,7 +43,7 @@ public class main {
             System.out.println("------------------------------------");
 
             try {
-                Thread.sleep(1*60*1000);
+                Thread.sleep(60*1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
