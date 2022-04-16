@@ -1,3 +1,5 @@
+package main.DAX;
+
 import yahoofinance.Stock;
 import yahoofinance.YahooFinance;
 import java.io.IOException;
