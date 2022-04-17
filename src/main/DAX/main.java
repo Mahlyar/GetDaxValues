@@ -13,7 +13,6 @@ import java.util.Collections;
 import java.util.Objects;
 //https://github.com/sstrickx/yahoofinance-api
 
-
 public class main {
     public static void main(String[] args) throws IOException {
 
