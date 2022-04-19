@@ -17,7 +17,6 @@ public class main {
     public static void main(String[] args) throws IOException {
 
         BasicConfigurator.configure();
-
         boolean active = true;
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm");
         ArrayList<BigDecimal> DaxValues = new ArrayList<>();
