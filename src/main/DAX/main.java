@@ -19,7 +19,6 @@ public class main {
         BasicConfigurator.configure();
 
         boolean active = true;
-        Stock stock = YahooFinance.get("^GDAXI");
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm");
         ArrayList<BigDecimal> DaxValues = new ArrayList<>();
 
@@ -27,6 +26,7 @@ public class main {
         System.out.println("------------------------------------");
         //calling the Daxprice every minute
         while (active){
+            Stock stock = YahooFinance.get("^GDAXI");
             System.out.println("Time: " + dtf.format(LocalDateTime.now()));
             System.out.println("Current price: " + stock.getQuote().getPrice() + " €");
             DaxValues.add(stock.getQuote().getPrice());
